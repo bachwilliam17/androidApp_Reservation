@@ -6,3 +6,71 @@ PRÉ-DESIGN
 - Simplicité d'apprentissage.
 - Visibilité.
 - Efficience.
+
+
+PREMIER DESIGN 
+
+1) Scénario de "Réservation en ligne" :
+	Olivier, 30 ans, père de famille dans la construction réserve pendant sa pause un restaurant pour l'anniversaire de sa fille demain. 
+Il commence par  entrer la ville où il habite dans la barre de recherche de la page d'accueil. Étant arrivé sur la page des résultats, il sélectionne un 
+restaurant parmi les différentes possibilités. 
+Si Olivier connaît déjà le nom du restaurant, il peut directement en taper le nom dans la barre de recherche et s'il a une préférence de catégorie associée à
+sa recherche, il peut l'indiquer en cliquant sur le bouton "Mes réservations".
+Il a l’option de pouvoir consulter le menu, l'adresse, le téléphone, le site Internet, l'email ou les horaires des restaurants qu’il sélectionne dans la liste
+des résultats. 
+Pour faire une réservation, il clique sur un restaurant dans la liste et sélectionne le bouton "Réserver".
+Ensuite il choisit la date et  l’horaire qui lui conviennent, il entre les détails de la réservation tel que son nom, le nombre de personnes, le nombre d’enfants, 
+son numéro de téléphone et son adresse courriel grâce aux champs assignés puis confirme la réservation en appuyant sur le bouton.
+Enfin, l'application affiche les détails de la réservation et lui permet de télécharger un pdf résumant les informations en cliquant sur l'icône de 
+téléchargement. Olivier a aussi le choix de définir un rappel en choisissant un délai grâce à un menu déroulant. Il peut également retourner au menu.
+
+L'utilisateur saura-t-il quoi faire ?   : Oui.
+Saura-t-il comment le faire ?           : Le fait de chercher un restaurant est intuitif car la page d'accueil contient peu d'éléments, dont une barre de 
+recherche conséquente et des signifiants qui indiquent à l'utilisateur ce qu'il peut chercher. Par contre, il peut avoir du mal à comprendre le concept des
+catégories et ne pas comprendre que celles-ci s'ajoutent à la recherche qu'il fait ensuite. Idem pour modifier les catégories.
+Comprendra-t-il la réponse du système ? : Oui. Si l'utilisateur fait une recherche, il se retrouvera devant une liste de restaurants et même s'il n'y a aucun
+résultat, l'application devrait indiquer cela clairement.
+
+
+2) Scénario de "Se rendre à un restaurant après avoir réservé" :
+	C’est les 3 ans de mariage du couple de Thomas et Léa qui ont 23 ans tous les deux et viennent d’avoir un bébé. Le soir, ils ont prévu d’aller au 
+restaurant et ils ont placé une réservation au préalable grâce à l’application. Ils vont voir l’historique de leurs réservations en cliquant sur le bouton
+"Mes réservations" de la page d'accueil puis récupèrent l’adresse en appuyant sur l'icône en forme de flèche bleue.Cela les emmène sur le GPS de leur téléphone
+qu'ils peuvent installer dans la voiture. Ils suivent les instructions du GPS, puis après être arrivés et s’être garés, 
+ils rentrent dans le restaurant en donnant leur nom et précisant qu’ils avaient fait une réservation.
+
+L'utilisateur saura-t-il quoi faire ?   : Oui.
+Saura-t-il comment le faire ?           : Le bouton des réservations est bien visible sur la page d'accueil et l'utilisateur saura certainement qu'il faut
+s'y rendre pour consulter les détails de ses réservations.
+Comprendra-t-il la réponse du système ? : Oui.
+
+
+
+3) Scénario de "Annuler une réservation" :
+	Roger, 64 ans, à la retraite depuis 2 ans, avait prévu d’emmener ses petit-fils au restaurant pour fêter la fin de l’année scolaire. Malheureusement, 
+l’un d’eux est tombé malade d’une mauvaise grippe qui est contagieuse et les parents ont décidé de repousser leur séjour et Roger doit donc annuler la réservation 
+qu’il avait faite. Pour ce faire, il se rend sur l’historique de ses réservations en cliquant sur le bouton "Mes réservations" de la page d'accueil et annule 
+la réservation qui correspond à celle prévue avec ses petit-fils en la retrouvant grâce au nom du restaurant et la date inscrite. L'annulation est effectuée 
+en appuyant sur l'icône en forme de poubelle rouge.
+
+L'utilisateur saura-t-il quoi faire ?   : Oui.
+Saura-t-il comment le faire ?           : Oui, pour les mêmes raisons que la tâche précédente.
+Comprendra-t-il la réponse du système ? : Non, en effet, le système ne demande pas de confirmation lors de l'annulation d'une réservation. L'utilisateur verra donc
+sa réservation disparaître de la liste même s'il s'était trompé en s'appuyant sur ce bouton.
+
+
+
+4) Scénario de "Appeler un restaurant" :
+	Mireille et Mathieu, 2 jeunes parents de 25 ans, ont décidé d’aller au restaurant pour fêter le nouveau job de Mireille. Ils sont sur le point de faire 
+une réservation dans un restaurant chinois qui leur a tapé dans l'œil (voir le scénario "Réservation en ligne") quand ils se demandent s’il y aura des chaises 
+pour enfant adaptées à leur jeune fils Titeuf. 
+Ils décident alors avant de faire la réservation d’appeler le restaurant pour confirmer cela, en cliquant sur l'icône en forme de téléphone vert sur le pop-up
+descriptif du restaurant.
+
+L'utilisateur saura-t-il quoi faire ?   : Pas forcément. Il ne sait peut-être pas qu'il a l'option d'appeler le restaurant via l'application.
+Saura-t-il comment le faire ?           : S'il sait que l'option est présente, alors l'utilisateur saura forcément qu'il peut passer un appel depuis le menu
+"Mes réservations".
+Comprendra-t-il la réponse du système ? : Oui.
+
+
+
