@@ -24,12 +24,14 @@ son numéro de téléphone et son adresse courriel grâce aux champs assignés p
 Enfin, l'application affiche les détails de la réservation et lui permet de télécharger un pdf résumant les informations en cliquant sur l'icône de 
 téléchargement. Olivier a aussi le choix de définir un rappel en choisissant un délai grâce à un menu déroulant. Il peut également retourner au menu.
 
-L'utilisateur saura-t-il quoi faire ?   : Oui.
-Saura-t-il comment le faire ?           : Le fait de chercher un restaurant est intuitif car la page d'accueil contient peu d'éléments, dont une barre de 
-recherche conséquente et des signifiants qui indiquent à l'utilisateur ce qu'il peut chercher. Par contre, il peut avoir du mal à comprendre le concept des
-catégories et ne pas comprendre que celles-ci s'ajoutent à la recherche qu'il fait ensuite. Idem pour modifier les catégories.
-Comprendra-t-il la réponse du système ? : Oui. Si l'utilisateur fait une recherche, il se retrouvera devant une liste de restaurants et même s'il n'y a aucun
-résultat, l'application devrait indiquer cela clairement.
+Entrer le nom de la ville dans la barre de recherche :
+	Il faudrait enlever les icones de ville, restaurant, adresse car la seule barre de recherche suffit amplement.
+Catégorie avant ou après la recherche :
+	À la manière du prototype du devoir 3, mettre un bouton 'plus d'options' qui affiche les catégories quand il est sélectionné.
+Confirmer la réservation :
+	Ajouter un message d'erreur si un user essaie de confirmer sans avoir rempli toutes les infos.
+PDF :
+	Rajouter un signifiant qui annonce que le format du compte-rendu est un PDF.
 
 
 2) Scénario de "Se rendre à un restaurant après avoir réservé" :
