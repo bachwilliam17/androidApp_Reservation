@@ -74,5 +74,8 @@ Saura-t-il comment le faire ?           : S'il sait que l'option est présente, 
 "Mes réservations".
 Comprendra-t-il la réponse du système ? : Oui.
 
+Allo
+
+
 
 
