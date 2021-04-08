@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadeScrollbars="false"
+    android:scrollbarSize="10dp">
+    <!-- Here you put the rest of your current view-->
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CategoriesResto">
+
+    <TextView
+        android:id="@+id/titreEcran"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="0dp"
+        android:background="#007FFF"
+        />
+    <TextView
+        android:id="@+id/resultatSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/white"
+        android:layout_marginTop="65dp"
+        android:layout_marginStart="85dp"
+        android:text="Paris\n(150 resultats)"
+        android:textSize="30dp"
+
+        />
+
+
+
+
+
+    <TextView
+        android:id="@+id/categorie1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Italien"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="170dp" />
+
+    <!-- ligne separateur -->
+    <View
+        android:id="@+id/ligneItalie"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/categorie1"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="40dp"/>
+
+
+    <TextView
+        android:id="@+id/resto1"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="250dp"
+        android:text="Alfredo Pizza (1km)"
+        android:textSize="22dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#007FFF"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewResto1"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ic_baseline_image_categorie"
+       app:layout_constraintTop_toTopOf="@id/resto1"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="@id/resto1"
+        android:layout_marginStart="12dp"/>
+
+    <TextView
+        android:id="@+id/resto2"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="250dp"
+        android:text="Alfredo Pasta (1km)"
+        android:textSize="22dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#007FFF"/>
+
+    <ImageView
+        android:id="@+id/imageViewResto2"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ic_baseline_image_categorie"
+        app:layout_constraintTop_toTopOf="@id/resto2"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="@id/resto2"
+        android:layout_marginStart="12dp"/>
+
+    <TextView
+        android:id="@+id/resto3"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="250dp"
+        android:text="Luigi pizza (1km)"
+        android:textSize="22dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#007FFF"/>
+
+    <ImageView
+        android:id="@+id/imageViewResto3"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ic_baseline_image_categorie"
+        app:layout_constraintTop_toTopOf="@id/resto3"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="@id/resto3"
+        android:layout_marginStart="12dp"/>
+
+    <TextView
+        android:id="@+id/categorie2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Japonais"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@id/resto1"
+        android:layout_marginTop="60dp" />
+
+    <!-- ligne separateur -->
+    <View
+        android:id="@+id/ligneJapon"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/categorie2"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="40dp"/>
+
+
+    <TextView
+        android:id="@+id/resto4"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Banzai sushi (1km)"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ligneJapon"
+        android:background="#ffae42"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewResto4"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ic_baseline_image_categorie"
+        app:layout_constraintTop_toTopOf="@id/resto4"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="@id/resto4"
+        android:layout_marginStart="12dp"/>
+
+    <TextView
+        android:id="@+id/resto5"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="20dp"
+        android:text="Sushi Mao (1km)"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ligneJapon"
+        android:background="#ffae42"/>
+
+    <ImageView
+        android:id="@+id/imageViewResto5"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ic_baseline_image_categorie"
+        app:layout_constraintTop_toTopOf="@id/resto5"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="@id/resto5"
+        android:layout_marginStart="12dp"
+        />
+
+    <TextView
+        android:id="@+id/resto6"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="20dp"
+        android:text="Alfredo Sushi (1km)"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ligneJapon"
+        android:background="#ffae42"/>
+
+    <ImageView
+        android:id="@+id/imageViewResto6"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ic_baseline_image_categorie"
+        app:layout_constraintTop_toTopOf="@id/resto6"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="@id/resto6"
+        android:layout_marginStart="12dp"/>
+
+
+    <!-- Categorie 3 -->
+    <TextView
+        android:id="@+id/categorie3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mexicain"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@id/resto4"
+        android:layout_marginTop="60dp" />
+
+    <!-- ligne separateur -->
+    <View
+        android:id="@+id/ligneMexique"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/categorie3"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="40dp"/>
+
+    <TextView
+        android:id="@+id/resto7"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Banzai sushi (1km)"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ligneMexique"
+        android:background="#ffae42"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewResto7"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ic_baseline_image_categorie"
+        app:layout_constraintTop_toTopOf="@id/resto7"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="@id/resto7"
+        android:layout_marginStart="12dp"/>
+
+    <TextView
+        android:id="@+id/resto8"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="20dp"
+        android:text="Sushi Mao (1km)"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ligneMexique"
+        android:background="#ffae42"/>
+
+    <ImageView
+        android:id="@+id/imageViewResto8"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ic_baseline_image_categorie"
+        app:layout_constraintTop_toTopOf="@id/resto8"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="@id/resto8"
+        android:layout_marginStart="12dp"
+        />
+
+    <TextView
+        android:id="@+id/resto9"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="20dp"
+        android:text="Alfredo Sushi (1km)"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ligneMexique"
+        android:background="#ffae42"/>
+
+    <ImageView
+        android:id="@+id/imageViewResto9"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ic_baseline_image_categorie"
+        app:layout_constraintTop_toTopOf="@id/resto9"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="@id/resto9"
+        android:layout_marginStart="12dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginStart="25dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginEnd="25dp"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="50dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layout_marginBottom="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <TextView
+        android:id="@+id/infoResto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/white"/>
+        <!--android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" -->
+
+    <TextView
+        android:id="@+id/titreResto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Luigi Pasta"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/infoResto"
+        android:layout_marginTop="45dp"
+        app:layout_constraintStart_toStartOf="@id/infoResto"
+        android:layout_marginStart="130dp" />
+
+    <ImageView
+        android:id="@+id/imageResto"
+        android:layout_width="99dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/ic_baseline_image_categorie"
+        app:layout_constraintStart_toStartOf="@id/infoResto"
+        app:layout_constraintTop_toTopOf="@id/infoResto" />
+
+    <ImageView
+        android:id="@+id/deletePopupCategorie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/btn_dialog"
+        app:layout_constraintTop_toTopOf="@id/infoResto"
+        app:layout_constraintEnd_toEndOf="@id/infoResto"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/adresseResto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adresse :"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/infoResto"
+        android:layout_marginStart="45dp"
+        app:layout_constraintTop_toBottomOf="@id/imageResto"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/rueResto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1234 avenue de la pizza"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/infoResto"
+        android:layout_marginStart="45dp"
+        app:layout_constraintTop_toBottomOf="@id/adresseResto"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/noTel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telephone"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@id/infoResto"
+        android:layout_marginStart="45dp"
+        app:layout_constraintTop_toBottomOf="@id/rueResto"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/telephone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="514-111-111"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@id/infoResto"
+        android:layout_marginStart="45dp"
+        app:layout_constraintTop_toBottomOf="@id/noTel"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/siteWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Site internet"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@id/infoResto"
+        android:layout_marginStart="45dp"
+        app:layout_constraintTop_toBottomOf="@id/telephone"
+        android:layout_marginTop="20dp"  />
+
+    <TextView
+        android:id="@+id/lienWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="www.alphonsopizzeria.com"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@id/infoResto"
+        android:layout_marginStart="45dp"
+        app:layout_constraintTop_toBottomOf="@id/siteWeb"
+        android:layout_marginTop="10dp"
+        android:autoLink="web"/>
+
+    <TextView
+        android:id="@+id/adresseCourriel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adresse Courriel"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@id/infoResto"
+        android:layout_marginStart="45dp"
+        app:layout_constraintTop_toBottomOf="@id/lienWeb"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="alphonsopizzeria@mail.com"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@id/infoResto"
+        android:layout_marginStart="45dp"
+        app:layout_constraintTop_toBottomOf="@id/adresseCourriel"
+        android:layout_marginTop="10dp"
+        android:autoLink="email"/>
+
+    <Button
+        android:id="@+id/buttonMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu       "
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/mail"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/infoResto"
+        android:layout_marginStart="130dp" />
+
+    <Button
+        android:id="@+id/buttonHoraires"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Horaires"
+        app:layout_constraintTop_toBottomOf="@id/buttonMenu"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/infoResto"
+        android:layout_marginStart="130dp" />
+
+    <Button
+        android:id="@+id/buttonReserver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reserver"
+        app:layout_constraintTop_toBottomOf="@id/buttonHoraires"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/infoResto"
+        android:layout_marginStart="130dp"/>
+
+    <ImageView
+        android:id="@+id/direction"
+        android:layout_width="55dp"
+        android:layout_height="46dp"
+        android:src="@drawable/ic_route"
+        app:layout_constraintStart_toEndOf="@id/adresseResto"
+        app:layout_constraintTop_toTopOf="@id/infoResto"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="135dp"
+        tools:layout_editor_absoluteX="279dp"
+        tools:layout_editor_absoluteY="234dp" />
+
+    <ImageView
+        android:id="@+id/tlf"
+        android:layout_width="57dp"
+        android:layout_height="44dp"
+        android:src="@drawable/ic_tlf"
+        app:layout_constraintStart_toEndOf="@id/telephone"
+        android:layout_marginStart="105dp"
+        app:layout_constraintTop_toBottomOf="@id/direction"
+        android:layout_marginTop="45dp" />
+
+    <ImageView
+        android:id="@+id/ic_horaire"
+        android:layout_width="34dp"
+        android:layout_height="49dp"
+        android:src="@drawable/ic_horaire"
+        app:layout_constraintStart_toStartOf="@id/infoResto"
+        android:layout_marginStart="85dp"
+        app:layout_constraintTop_toBottomOf="@id/mail"
+        android:layout_marginTop="65dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
