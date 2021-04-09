@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AcceuilPlusOption">
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Mes réservations"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="40dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="44dp"
+        app:layout_constraintTop_toBottomOf="@id/searchView1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="35dp"
+        app:srcCompat="@drawable/minus_circle" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="240dp"
+        android:layout_marginBottom="428dp"
+        android:text="Catégories"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/searchView1"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toEndOf="@+id/image2"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="0dp"
+        android:background="#007FFF"
+        />
+    <TextView
+        android:id="@+id/titre2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/white"
+        android:layout_marginTop="65dp"
+        android:layout_marginStart="85dp"
+        android:text="Bienvenue"
+        android:textSize="50dp"
+
+        />
+
+    <SearchView
+        android:id="@+id/searchView1"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="45dp"
+        android:background="#ffff"
+        android:queryHint="Restaurant,Ville,Adresse..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar2" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="111dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="45dp"
+        android:text="Italien"
+        android:checked="true"
+        app:layout_constraintTop_toBottomOf="@id/image2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="80dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Japonais"
+        app:layout_constraintTop_toBottomOf="@id/checkBox1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="25dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:text="Vietnamien"
+        app:layout_constraintTop_toBottomOf="@id/checkBox2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="25dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Français"
+        app:layout_constraintTop_toBottomOf="@id/searchView1"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="60dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="188dp"
+        android:text="Russe"
+        app:layout_constraintTop_toBottomOf="@id/checkBox4"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
