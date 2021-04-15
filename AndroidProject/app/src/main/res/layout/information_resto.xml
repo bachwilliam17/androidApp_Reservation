@@ -12,6 +12,7 @@
     app:layout_constraintBottom_toBottomOf="parent"
     android:layout_marginBottom="50dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/background_dark"
     >
 
 
@@ -170,32 +171,41 @@
         android:id="@+id/buttonMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Menu       "
-        android:textAlignment="center"
-        app:layout_constraintTop_toBottomOf="@id/mail"
+        android:layout_marginStart="130dp"
         android:layout_marginTop="10dp"
+        android:backgroundTint="@color/marineBlue"
+        android:backgroundTintMode="src_in"
+        android:text="Menu       "
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="@id/infoResto"
-        android:layout_marginStart="130dp" />
+        app:layout_constraintTop_toBottomOf="@id/mail" />
 
     <Button
         android:id="@+id/buttonHoraires"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Horaires"
-        app:layout_constraintTop_toBottomOf="@id/buttonMenu"
+        android:layout_marginStart="130dp"
         android:layout_marginTop="10dp"
+        android:backgroundTint="@color/marineBlue"
+        android:backgroundTintMode="src_in"
+        android:text="Horaires"
+        android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="@id/infoResto"
-        android:layout_marginStart="130dp" />
+        app:layout_constraintTop_toBottomOf="@id/buttonMenu" />
 
     <Button
         android:id="@+id/buttonReserver"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Reserver"
-        app:layout_constraintTop_toBottomOf="@id/buttonHoraires"
+        android:layout_marginStart="130dp"
         android:layout_marginTop="10dp"
+        android:backgroundTint="#673AB7"
+        android:backgroundTintMode="src_in"
+        android:text="Reserver"
+        android:textColor="#FBFBFB"
         app:layout_constraintStart_toStartOf="@id/infoResto"
-        android:layout_marginStart="130dp"/>
+        app:layout_constraintTop_toBottomOf="@id/buttonHoraires" />
 
     <ImageView
         android:id="@+id/direction"
@@ -213,20 +223,10 @@
         android:id="@+id/tlf"
         android:layout_width="57dp"
         android:layout_height="44dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="65dp"
         android:src="@drawable/ic_tlf"
         app:layout_constraintStart_toEndOf="@id/telephone"
-        android:layout_marginStart="105dp"
-        app:layout_constraintTop_toBottomOf="@id/direction"
-        android:layout_marginTop="45dp" />
-
-    <ImageView
-        android:id="@+id/ic_horaire"
-        android:layout_width="34dp"
-        android:layout_height="49dp"
-        android:src="@drawable/ic_horaire"
-        app:layout_constraintStart_toStartOf="@id/infoResto"
-        android:layout_marginStart="85dp"
-        app:layout_constraintTop_toBottomOf="@id/mail"
-        android:layout_marginTop="65dp" />
+        app:layout_constraintTop_toBottomOf="@id/direction" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

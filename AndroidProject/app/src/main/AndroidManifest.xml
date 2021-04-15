@@ -8,17 +8,20 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Devoir4InterfaceVersionDave">
-        <activity android:name=".Acceuil">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".Menu_restaurant"></activity>
+        <activity android:name=".Horaires_restaurant" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CategoriesResto"/>
-        <activity android:name=".AcceuilPlusOption"/>
-
+        <activity android:name=".CategoriesResto" />
+        <activity android:name=".AcceuilPlusOption" />
+        <activity android:name=".page_reservation" />
+        <activity android:name=".reservationConfirmee" />
     </application>
 
 </manifest>

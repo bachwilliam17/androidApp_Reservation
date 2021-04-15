@@ -2,6 +2,8 @@ package com.example.reservation;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
@@ -10,17 +12,18 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class AcceuilPlusOption extends AppCompatActivity {
-    ImageView image_minus;
+public class MainActivity extends AppCompatActivity {
+    ImageView image;
     Button reservations;
     EditText searchBar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.acceuil_plus_option);
+        setContentView(R.layout.acceuil);
 
-        image_minus = (ImageView) findViewById(R.id.image2);
+        image = (ImageView) findViewById(R.id.image1);
         listenImage();
 
         reservations = (Button) findViewById(R.id.reservation_button);
@@ -31,10 +34,10 @@ public class AcceuilPlusOption extends AppCompatActivity {
     }
 
     private void listenImage() {
-        image_minus.setOnClickListener(new View.OnClickListener() {
+        image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(AcceuilPlusOption.this, MainActivity.class);
+                Intent i = new Intent(MainActivity.this, AcceuilPlusOption.class);
                 startActivity(i);
             }
         });
@@ -44,7 +47,7 @@ public class AcceuilPlusOption extends AppCompatActivity {
         reservations.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(AcceuilPlusOption.this, page_reservation.class);
+                Intent i = new Intent(MainActivity.this, page_reservation.class);
                 startActivity(i);
             }
         });
@@ -57,7 +60,7 @@ public class AcceuilPlusOption extends AppCompatActivity {
                 if ((event.getAction() == KeyEvent.ACTION_DOWN) &&
                         (keyCode == KeyEvent.KEYCODE_ENTER)) {
                     // Perform action on key press
-                    Intent i = new Intent(AcceuilPlusOption.this, CategoriesResto.class);
+                    Intent i = new Intent(MainActivity.this, CategoriesResto.class);
                     startActivity(i);
                 }
                 return false;

@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class page_reservation extends AppCompatActivity {
+public class Horaires_restaurant extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.page_reservation);
+        setContentView(R.layout.horaires_restaurant);
     }
 }

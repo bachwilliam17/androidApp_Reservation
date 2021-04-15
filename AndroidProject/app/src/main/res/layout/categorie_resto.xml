@@ -35,11 +35,7 @@
         android:layout_marginStart="85dp"
         android:text="Paris\n(150 resultats)"
         android:textSize="30dp"
-
         />
-
-
-
 
 
     <TextView
