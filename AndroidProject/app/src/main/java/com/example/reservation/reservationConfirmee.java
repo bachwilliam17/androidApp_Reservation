@@ -12,6 +12,7 @@ import android.widget.Spinner;
 
 public class reservationConfirmee extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
     Button retourMenu;
+    Button backToReservation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +20,6 @@ public class reservationConfirmee extends AppCompatActivity implements AdapterVi
         setContentView(R.layout.reservation_confirmee);
 
         // le spinner est tiré de : https://www.youtube.com/watch?v=on_OrrX7Nw4
-
         Spinner spinnerRappel = findViewById(R.id.rappelSpinner);
         ArrayAdapter<CharSequence> adapterSpinner = ArrayAdapter.createFromResource(this,R.array.joursNotif, android.R.layout.simple_spinner_item);
         adapterSpinner.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -31,6 +31,15 @@ public class reservationConfirmee extends AppCompatActivity implements AdapterVi
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(reservationConfirmee.this, MainActivity.class);
+                startActivity(i);
+            }
+        });
+
+        backToReservation = (Button) findViewById(R.id.backToReservation);
+        backToReservation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(reservationConfirmee.this, page_reservation.class);
                 startActivity(i);
             }
         });

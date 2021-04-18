@@ -13,6 +13,7 @@ import android.widget.Spinner;
 
 public class page_reservation extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     Button reservationConfirmee;
+    Button backToCategories;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,15 @@ public class page_reservation extends AppCompatActivity implements AdapterView.O
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(page_reservation.this, reservationConfirmee.class);
+                startActivity(i);
+            }
+        });
+
+        backToCategories = (Button) findViewById(R.id.backToCategories);
+        backToCategories.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(page_reservation.this, CategoriesResto.class);
                 startActivity(i);
             }
         });

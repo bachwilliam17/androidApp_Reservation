@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/Details"
+        android:id="@+id/text_choixCategories"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
@@ -30,7 +30,7 @@
         app:layout_constraintTop_toTopOf="@+id/popUp" />
 
     <View
-        android:id="@+id/ligneDetails"
+        android:id="@+id/ligneSeparation"
         android:layout_width="200dp"
         android:layout_height="1dp"
         android:layout_marginTop="8dp"
@@ -38,7 +38,7 @@
         app:layout_constraintEnd_toEndOf="@+id/popUp"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@id/popUp"
-        app:layout_constraintTop_toBottomOf="@id/Details" />
+        app:layout_constraintTop_toBottomOf="@id/text_choixCategories" />
 
     <TextView
         android:id="@+id/restaurant"
@@ -85,7 +85,7 @@
         app:layout_constraintTop_toBottomOf="@+id/heure" />
 
     <ImageView
-        android:id="@+id/fermer"
+        android:id="@+id/fermerCat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="@+id/popUp"

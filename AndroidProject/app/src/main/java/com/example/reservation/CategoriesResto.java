@@ -16,10 +16,14 @@ import android.widget.TextView;
 
 public class CategoriesResto extends AppCompatActivity{
     Dialog epicDialog;
+    Dialog filterDialog;
+    ImageView DeletePopupFilter;
     ImageView deletePopupCategorie;
     Button menuButton;
     Button horairesButton;
     Button reserverButton;
+    Button backToRecherche;
+    Button filtrerCategories;
 
     TextView resto1;
     TextView resto2;
@@ -37,6 +41,7 @@ public class CategoriesResto extends AppCompatActivity{
         setContentView(R.layout.categorie_resto);
 
         epicDialog = new Dialog(this);
+        filterDialog = new Dialog(this);
 
         resto1 = (TextView) findViewById(R.id.resto1);
         resto1.setOnClickListener(new View.OnClickListener(){
@@ -109,10 +114,28 @@ public class CategoriesResto extends AppCompatActivity{
                 ShowPopup();
             }
         });
+
+        backToRecherche = (Button) findViewById(R.id.backToRecherche);
+        backToRecherche.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(CategoriesResto.this, MainActivity.class);
+                startActivity(i);
+            }
+        });
+
+        filtrerCategories = (Button) findViewById(R.id.filtrerCategories);
+        filtrerCategories.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ShowFilter();
+            }
+        });
     }
 
     public void ShowPopup(){
         epicDialog.setContentView(R.layout.information_resto);
+
         deletePopupCategorie = (ImageView) epicDialog.findViewById(R.id.deletePopupCategorie);
         deletePopupCategorie.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -150,6 +173,21 @@ public class CategoriesResto extends AppCompatActivity{
 
         epicDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         epicDialog.show();
+    }
+
+    public void ShowFilter() {
+        filterDialog.setContentView(R.layout.filtre_categories);
+
+        DeletePopupFilter = filterDialog.findViewById(R.id.fermerCat);
+        DeletePopupFilter.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                filterDialog.dismiss();
+            }
+        });
+
+        filterDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        filterDialog.show();
     }
 
 }
