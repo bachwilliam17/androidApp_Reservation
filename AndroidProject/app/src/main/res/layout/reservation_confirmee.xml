@@ -6,4 +6,211 @@
     android:layout_height="match_parent"
     tools:context=".reservationConfirmee">
 
+    <TextView
+        android:id="@+id/nbPersTagConfirm"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:text="Nombre de personnes : "
+        android:textColor="#050505"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heureTagConfirm" />
+
+    <TextView
+        android:id="@+id/heureTagConfirm"
+        android:layout_width="114dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:text="Heure : "
+        android:textColor="#050505"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateTagConfirm" />
+
+    <TextView
+        android:id="@+id/dateTagConfirm"
+        android:layout_width="114dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:text="Date :"
+        android:textColor="#050505"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomRestoTagConfirm" />
+
+    <TextView
+        android:id="@+id/reservationBack"
+        android:layout_width="415dp"
+        android:layout_height="174dp"
+        android:background="#652CB3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/pageReservationConfirmeeTitre"
+        android:layout_width="339dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="198dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="190dp"
+        android:layout_marginBottom="608dp"
+        android:background="#652CB3"
+        android:text="Réservation confirmée"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <TextView
+        android:id="@+id/nomRestoTagConfirm"
+        android:layout_width="114dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:text="Restaurant :"
+        android:textColor="#050505"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reservationBack" />
+
+    <Button
+        android:id="@+id/BtnRetourMenu"
+        android:layout_width="275dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="#652CB3"
+        android:gravity="center"
+        android:text="Retour au Menu"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rappelSpinner" />
+
+    <TextView
+        android:id="@+id/nomRestoConfirm"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:text="Luigi Pasta"
+        android:textColor="#050505"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nomRestoTagConfirm"
+        app:layout_constraintTop_toBottomOf="@+id/reservationBack" />
+
+    <TextView
+        android:id="@+id/dateConfirm"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:text="29 - 05 - 2022"
+        android:textColor="#050505"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/dateTagConfirm"
+        app:layout_constraintTop_toBottomOf="@+id/nomRestoConfirm" />
+
+    <TextView
+        android:id="@+id/heureConfirm"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:text="16 : 20"
+        android:textColor="#050505"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/heureTagConfirm"
+        app:layout_constraintTop_toBottomOf="@+id/dateConfirm" />
+
+    <TextView
+        android:id="@+id/nbPersoConfirm"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:text="56"
+        android:textColor="#050505"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toEndOf="@+id/nbPersTagConfirm"
+        app:layout_constraintTop_toBottomOf="@+id/heureConfirm" />
+
+    <TextView
+        android:id="@+id/pdfTag"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:text="PDF"
+        android:textAlignment="center"
+        android:textColor="#7E7575"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nbPersTagConfirm" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pdfTag"
+        app:srcCompat="@drawable/ic_pdficon" />
+
+    <TextView
+        android:id="@+id/rappelTagConfirm"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:text="Définir un rappel :"
+        android:textColor="#050505"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Spinner
+        android:id="@+id/rappelSpinner"
+        android:layout_width="195dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nbPersoConfirm" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

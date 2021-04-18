@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".Menu_restaurant"></activity>
+        <activity android:name=".InformationSupplementaire"></activity>
+        <activity android:name=".MesReservations" />
+        <activity android:name=".Menu_restaurant" />
         <activity android:name=".Horaires_restaurant" />
         <activity android:name=".MainActivity">
             <intent-filter>

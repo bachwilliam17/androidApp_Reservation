@@ -19,6 +19,7 @@ public class CategoriesResto extends AppCompatActivity{
     ImageView deletePopupCategorie;
     Button menuButton;
     Button horairesButton;
+    Button reserverButton;
 
     TextView resto1;
     TextView resto2;
@@ -134,6 +135,15 @@ public class CategoriesResto extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(CategoriesResto.this, Horaires_restaurant.class);
+                startActivity(i);
+            }
+        });
+
+        reserverButton = (Button) epicDialog.findViewById(R.id.buttonReserver);
+        reserverButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(CategoriesResto.this, page_reservation.class);
                 startActivity(i);
             }
         });

@@ -6,40 +6,370 @@
     android:layout_height="match_parent"
     tools:context=".page_reservation">
 
+    <EditText
+        android:id="@+id/minuteRserv"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:inputType="time"
+        app:layout_constraintStart_toEndOf="@+id/colnumHr"
+        app:layout_constraintTop_toBottomOf="@+id/nbPersReserv" />
+
     <TextView
-        android:id="@+id/pageReservationTitre"
-        android:layout_width="226dp"
-        android:layout_height="87dp"
+        android:id="@+id/colnumHr"
+        android:layout_width="24dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="88dp"
+        android:gravity="center"
+        android:text=":"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        app:layout_constraintStart_toEndOf="@+id/hourReserv"
+        app:layout_constraintTop_toBottomOf="@+id/nbPersReserv" />
+
+    <TextView
+        android:id="@+id/date2"
+        android:layout_width="75dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:text="Date : "
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nbPersReserv" />
+
+    <TextView
+        android:id="@+id/heure"
+        android:layout_width="114dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:text="Heure :"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date2" />
+
+    <TextView
+        android:id="@+id/nbPersReserv"
+        android:layout_width="275dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:text="Nombre de personnes :"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nbPersTagConfirm" />
+
+    <TextView
+        android:id="@+id/dash"
+        android:layout_width="24dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="-"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/teleCustPart2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/teleCustPart1"
+        app:layout_constraintTop_toBottomOf="@+id/courrielTextBox" />
+
+    <TextView
+        android:id="@+id/parantheseR"
+        android:layout_width="10dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:text=")"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/teleCustPart1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/indicatif"
+        app:layout_constraintTop_toBottomOf="@+id/courrielTextBox" />
+
+    <EditText
+        android:id="@+id/teleCustPart2"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintStart_toEndOf="@+id/teleCustPart1"
+        app:layout_constraintTop_toBottomOf="@+id/courrielTextBox" />
+
+    <EditText
+        android:id="@+id/teleCustPart1"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toEndOf="@+id/indicatif"
+        app:layout_constraintTop_toBottomOf="@+id/courrielTextBox" />
+
+    <TextView
+        android:id="@+id/nbPersTagConfirm"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:text="Téléphone :"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heureTagConfirm" />
+
+    <TextView
+        android:id="@+id/heureTagConfirm"
+        android:layout_width="114dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:text="Courriel :"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateTagConfirm" />
+
+    <EditText
+        android:id="@+id/courrielTextBox"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Entrer votre courriel"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.258"
+        app:layout_constraintStart_toEndOf="@+id/nomRestoTagConfirm"
+        app:layout_constraintTop_toBottomOf="@+id/nomTextBox" />
+
+    <EditText
+        android:id="@+id/nomTextBox"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Entrer votre nom"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.258"
+        app:layout_constraintStart_toEndOf="@+id/nomRestoTagConfirm"
+        app:layout_constraintTop_toBottomOf="@+id/prenomTextBox" />
+
+    <TextView
+        android:id="@+id/dateTagConfirm"
+        android:layout_width="114dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:text="Nom :"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomRestoTagConfirm" />
+
+    <TextView
+        android:id="@+id/reservationBack"
+        android:layout_width="415dp"
+        android:layout_height="174dp"
+        android:background="#652CB3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/pageReservationConfirmeeTitre"
+        android:layout_width="289dp"
+        android:layout_height="58dp"
         android:layout_marginStart="198dp"
         android:layout_marginTop="115dp"
         android:layout_marginEnd="190dp"
         android:layout_marginBottom="608dp"
+        android:background="#652CB3"
         android:text="Réservation"
-        android:textSize="36sp"
         android:textAlignment="center"
         android:textColor="@color/white"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="39dp"
-        android:layout_height="33dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
+        app:layout_constraintVertical_bias="0.32" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/abc_vector_test"
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="28dp" />
+    <TextView
+        android:id="@+id/nomRestoTagConfirm"
+        android:layout_width="114dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:text="Prénom :"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reservationBack" />
+
+    <EditText
+        android:id="@+id/prenomTextBox"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Entrer votre prénom"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/nomRestoTagConfirm"
+        app:layout_constraintTop_toBottomOf="@+id/reservationBack" />
+
+    <EditText
+        android:id="@+id/indicatif"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toEndOf="@+id/nbPersTagConfirm"
+        app:layout_constraintTop_toBottomOf="@+id/courrielTextBox" />
+
+    <TextView
+        android:id="@+id/parantheseL"
+        android:layout_width="10dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:text="("
+        android:textSize="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/indicatif"
+        app:layout_constraintStart_toEndOf="@+id/nbPersTagConfirm"
+        app:layout_constraintTop_toBottomOf="@+id/courrielTextBox" />
+
+    <EditText
+        android:id="@+id/hourReserv"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:inputType="time"
+        app:layout_constraintStart_toEndOf="@+id/heure"
+        app:layout_constraintTop_toBottomOf="@+id/nbPersReserv" />
+
+    <Button
+        android:id="@+id/BtnReservationConfirmee"
+        android:layout_width="270dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="24dp"
+        android:background="#652CB3"
+        android:gravity="center"
+        android:text="Confirmer la réservation"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hourReserv" />
+
+    <Spinner
+        android:id="@+id/nbPersInput"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nbPersReserv"
+        app:layout_constraintTop_toBottomOf="@+id/teleCustPart2" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="47dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="JJ"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/date2"
+        app:layout_constraintTop_toBottomOf="@+id/nbPersReserv" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="80dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="AAAA"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/nbPersReserv" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="54dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="MM"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/nbPersReserv" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="15dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="25dp"
+        android:text="-"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName3"
+        app:layout_constraintTop_toBottomOf="@+id/nbPersReserv" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="15dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="25dp"
+        android:text="-"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/nbPersReserv" />
 </androidx.constraintlayout.widget.ConstraintLayout>

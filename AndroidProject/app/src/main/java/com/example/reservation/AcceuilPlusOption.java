@@ -44,7 +44,7 @@ public class AcceuilPlusOption extends AppCompatActivity {
         reservations.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(AcceuilPlusOption.this, page_reservation.class);
+                Intent i = new Intent(AcceuilPlusOption.this, MesReservations.class);
                 startActivity(i);
             }
         });

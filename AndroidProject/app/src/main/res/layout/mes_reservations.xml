@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Info_reservations"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".MesReservations">
+
+    <TextView
+        android:id="@+id/appel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Appeler"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/appel"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toStartOf="@+id/appel"
+        app:layout_constraintTop_toBottomOf="@+id/appel" />
+
+    <TextView
+        android:id="@+id/hautPage"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_marginTop="0dp"
+        android:background="#652CB3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titrePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="90dp"
+        android:text="Mes Réservations"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/aVenir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:text="À Venir"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/ligneVenir"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:background="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/aVenir" />
+
+    <TextView
+        android:id="@+id/SushiSama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="248dp"
+        android:text="05/29 : Sushi Sama (11:30)"
+        android:textColor="#050505"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="248dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_menu_delete" />
+
+    <ImageView
+        android:id="@+id/appel"
+        android:layout_width="35dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SushiSama"
+        app:srcCompat="@drawable/ic_tlf" />
+
+    <ImageView
+        android:id="@+id/itineraire1"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toEndOf="@+id/appel"
+        app:layout_constraintTop_toBottomOf="@+id/SushiSama"
+        app:srcCompat="@drawable/ic_route" />
+
+    <TextView
+        android:id="@+id/textView_null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Itinéraire"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/itineraire1"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="@+id/itineraire1"
+        app:layout_constraintTop_toBottomOf="@+id/itineraire1" />
+
+    <Button
+        android:id="@+id/info1"
+        android:layout_width="43dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_infos"
+        app:layout_constraintStart_toEndOf="@+id/textView_null"
+        app:layout_constraintTop_toBottomOf="@+id/SushiSama"
+        app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+    <TextView
+        android:id="@+id/information1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Infos"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/info1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/info1"
+        app:layout_constraintTop_toBottomOf="@+id/info1" />
+
+    <TextView
+        android:id="@+id/AngloPizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="400dp"
+        android:text="03/09 : Angelo's Pizza (12:00)"
+        android:textColor="#040303"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_menu_delete" />
+
+    <ImageView
+        android:id="@+id/image7View"
+        android:layout_width="38dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AngloPizza"
+        app:srcCompat="@drawable/ic_tlf" />
+
+    <TextView
+        android:id="@+id/appel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="appeler"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/image7View"
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toStartOf="@+id/image7View"
+        app:layout_constraintTop_toBottomOf="@+id/image7View" />
+
+    <ImageView
+        android:id="@+id/itineraire2"
+        android:layout_width="38dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toEndOf="@+id/appel2"
+        app:layout_constraintTop_toBottomOf="@+id/AngloPizza"
+        app:srcCompat="@drawable/ic_route" />
+
+    <TextView
+        android:id="@+id/itinerairePiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="itinéraire"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/itineraire2"
+        app:layout_constraintStart_toStartOf="@+id/itineraire2"
+        app:layout_constraintTop_toBottomOf="@+id/itineraire2" />
+
+    <Button
+        android:id="@+id/info2"
+        android:layout_width="43dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_infos"
+        app:layout_constraintStart_toEndOf="@+id/itinerairePiz"
+        app:layout_constraintTop_toBottomOf="@+id/AngloPizza"
+        app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+    <TextView
+        android:id="@+id/information2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Infos"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/info2"
+        app:layout_constraintStart_toStartOf="@+id/info2"
+        app:layout_constraintTop_toBottomOf="@+id/info2" />
+
+    <TextView
+        android:id="@+id/reservationsPassees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="556dp"
+        android:text="Passées"
+        android:textAlignment="center"
+        android:textColor="#0B0B0B"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/hautPage" />
+
+    <View
+        android:id="@+id/lignePassees"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:background="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reservationsPassees" />
+
+    <TextView
+        android:id="@+id/lingo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="636dp"
+        android:text="02/30 : Lingo (13:15)"
+        android:textColor="#050505"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/carambo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="684dp"
+        android:text="01/28 : Carambo (12:45)"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image11View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="636dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/lingo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+    <Button
+        android:id="@+id/image12View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="684dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/carambo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
